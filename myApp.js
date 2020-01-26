@@ -17,6 +17,10 @@
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_URI);
 
+let personSchema = new mongoose.Schema({
+  email: String
+});
+
 
 /** # SCHEMAS and MODELS #
 /*  ====================== */
